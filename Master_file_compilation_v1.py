@@ -5,7 +5,8 @@
 # Credit: https://stackoverflow.com/questions/15793349/how-to-concatenate-three-excels-files-xlsx-using-python
 # compiled and modified script by UXO_India, 12 sep 2017
 # Instructions to use:
-# 1.set output folder and file name before executing script # by default it will store in C drive with Master_file_compiled.xls name
+# 1.set output folder and file name before executing script 
+# by default it will store in C drive with Master_file_compiled.xls name
 # 2. provide input workspace folder path where all excel files stored 
 ###################################################################################
 
@@ -46,6 +47,6 @@ for f in xlsfiles:
 wkbk.save(r'C:\Master_file_compiled.xls') # path and name of file
 print "\n Master file successfully compiled"
 
-###### Thank You ############
+###### Thank You ###############
 
 
