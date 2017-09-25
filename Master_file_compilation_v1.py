@@ -23,7 +23,7 @@ path = inputWS
 wkbk = xlwt.Workbook()
 outsheet = wkbk.add_sheet('Locale compiled')
 files = os.listdir(path)
-files_xlsx = [f for f in files if f[-4:] == 'xlsx']
+files_xlsx = [f for f in files if f[-4:] == 'xlsx'] # if excel extension is 'xls' use [-3]
 print files_xlsx
 xlsfiles = files_xlsx
 a = files_xlsx[0]
@@ -38,7 +38,7 @@ for f in xlsfiles:
                            insheet.cell_value(row_idx, col_idx))
          outrow_idx += 1         
     else:
-      for row_idx in xrange(10,insheet.nrows):
+      for row_idx in xrange(9,insheet.nrows): # Index value of rows of second spreadsheet
           for col_idx in xrange(insheet.ncols):
              outsheet.write(outrow_idx, col_idx, 
                            insheet.cell_value(row_idx, col_idx))
