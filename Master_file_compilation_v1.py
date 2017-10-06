@@ -30,7 +30,7 @@ a = files_xlsx[0]
 
 outrow_idx = 0
 for f in xlsfiles:
-    insheet = xlrd.open_workbook(f).sheets()[1]
+    insheet = xlrd.open_workbook(f).sheets()[1] # Here add index values of sheet of excel which need to be compile together.
     if f==a:
      for row_idx in xrange(insheet.nrows):
          for col_idx in xrange(insheet.ncols):
